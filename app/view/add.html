@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action='/index/save' method='post'>
+	<fieldset>
+		<legend>添加留言</legend>
+		<input type='text'placeholder='用户名' name='user'/>
+		<textarea placeholder='留言' name='content'></textarea>
+		<input type='submit' value='提交'/>
+	</fieldset>
+</form>
+{% endblock %}

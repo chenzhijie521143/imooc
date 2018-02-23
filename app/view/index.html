@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<ul>
+	{% for item in data %}
+	<li>
+		<h1>{{item.user}}</h1>
+		<p>{{item.content}}</p>
+		<span>{{item.lastdate}}</span>
+		<a href='/index/del/id/{{item.Id}}'>删除留言</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
